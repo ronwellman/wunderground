@@ -102,3 +102,6 @@ ENV/
 
 # myconfig
 config.py
+
+# vim
+*.swp
