@@ -29,7 +29,7 @@ def parse_json(req):
     temperature, and winds information and returns a list containing
     that information preformated for display
     '''
-    curr_obs = req.json()['current_observation']
+    curr_obs = req['current_observation']
     city = curr_obs['observation_location']['city'].split(',')[-1].strip()
     state = curr_obs['observation_location']['state']
     temp_f = curr_obs['temp_f']
